@@ -1,0 +1,69 @@
+.stories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 13px;
+  grid-template-rows: 195px;
+  margin-bottom: 3rem;
+  
+  &__item {
+    position: relative;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba($black, .2);
+    overflow: hidden;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-image: linear-gradient(to bottom, rgba($black, .8), rgba($black, 0), rgba($black, .8));
+    }
+
+    &:hover {
+      .stories__preview {
+        transform: scale(1.3);
+        transition-duration: 3s;
+      }
+    }
+  }
+
+  &__preview {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+  }
+
+  &__title,
+  &__date {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    color: $white;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    padding: 1.4rem;
+  }
+
+  &__title {
+    top: 0;
+  }
+
+  &__date {
+    bottom: 0;
+    text-align: right;
+  }
+}

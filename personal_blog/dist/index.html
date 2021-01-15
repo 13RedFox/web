@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Personal blog</title>
+</head>
+<body>
+    <div class="page">
+<!--        Header-->
+        <header class="header">
+          <div class="header__left">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Главное</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link has-subnav" href="#">Статьи</a>
+        
+                  <ul class="subnav">
+                    <li>
+                      <a class="subnav__link" href="#">Создание сайтов</a>
+                    </li>
+                    <li>
+                      <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                    </li>
+                    <li>
+                      <a class="subnav__link" href="#">Продвижение видео</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Обо мне</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Реклама</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__right">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Профиль</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Выйти</a>
+                </li>
+              </ul>
+            </nav>
+            <form class="search" action="/" method="post">
+              <input class="search__input" type="text" placeholder="Поиск по блогу">
+            </form>
+          </div>
+        </header>
+<!--        Sidebar-->
+        <aside class="sidebar">
+          <div class="side__header">
+            <img src="./assets/images/sidebar_header.jpg" alt="Bg_logo">
+          </div>
+        
+          <div class="sidebar__content">
+            <div class="profile">
+              <img class="profile__avatar" src="https://placehold.it/100" alt="Avatar">
+              <div class="profile__name">Иван Иванов</div>
+              <div class="profile__prof">блог front-end разработчика</div>
+        
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#" target="_blank">
+                    <img src="./assets/images/instagram.svg" alt="Instagram">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" target="_blank">
+                    <img src="./assets/images/vk.svg" alt="Vk">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" target="_blank">
+                    <img src="./assets/images/pinterest.svg" alt="Pinterest">
+                  </a>
+                </li>
+              </ul>
+        
+              <div class="profile__text">
+                <p>
+                  Front-end разработчик. Практик верстки сайтов.
+                  Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
+                </p>
+              </div>
+            </div>
+          </div>
+        
+          <div class="sidebar__footer">
+            <a class="btn btn--red" href="#">Мои работы</a>
+            <button class="btn btn--blue" type="button">Написать мне</button>
+          </div>
+        </aside><!--        Main-->
+        <main class="main">
+            <div class="container">
+                <!--  Stories-->
+                <div class="stories">
+                  <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/stories_1.jpg" alt="Stories">
+                    <div class="stories__title">Отдыхаю на природе</div>
+                    <time class="stories__date" datetime="2020-09-21 19:21">21.09.2020</time>
+                  </div>
+                  <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/stories_2.jpg" alt="Stories">
+                    <div class="stories__title">Заканчиваю сложный проект</div>
+                    <time class="stories__date" datetime="2020-09-15 19:21">15.09.2020</time>
+                  </div>
+                  <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/stories_3.jpg" alt="Stories">
+                    <div class="stories__title">Переехал в новую квартру</div>
+                    <time class="stories__date" datetime="2020-09-11 19:21">11.09.2020</time>
+                  </div>
+                  <div class="stories__item">
+                    <img class="stories__preview" src="./assets/images/stories/stories_4.jpg" alt="Stories">
+                    <div class="stories__title">Осень пришла!</div>
+                    <time class="stories__date" datetime="2020-08-28 19:21">28.08.2020</time>
+                  </div>
+                </div> <!-- /.stories-->
+                
+                <!--  Add-post-->
+                <div class="add-post">
+                  <form class="add-post__form" action="/" method="post">
+                    <textarea class="add-post__textarea" name="post-tet" placeholder="Напишите что-нибудь"></textarea>
+                
+                    <div class="add-post__form-actions">
+                      <label class="add-post__file" for="add-post-file">
+                        <input type="file" id="add-post-file">
+                      </label>
+                      <button class="add-post__send" type="submit">
+                        <img src="./assets/images/send.svg" alt="Отправить">
+                      </button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
