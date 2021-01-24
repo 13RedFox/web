@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: slategrey;
+}
+
+ul {
+  width: 200px;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link img {
+  margin-right: 10px;
+}
