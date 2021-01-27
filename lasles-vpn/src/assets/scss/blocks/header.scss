@@ -1,0 +1,73 @@
+.header {
+  min-height: 580px;
+  //position: relative;
+
+  &__nav {
+    //position: fixed;
+    padding-top: 20px;
+    margin-bottom: 8.8rem;
+
+    &-logo {
+      display: inline-block;
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-link {
+      color: $gray;
+      font-weight: 400;
+      text-transform: capitalize;
+    }
+
+    &-btn {
+      width: 150px;
+      height: 45px;
+      color: $dark-black;
+      font-weight: 500;
+      background-color: transparent;
+      border: 1px solid transparent;
+      text-transform: capitalize;
+      &:hover {
+        border-color: $red;
+        color: $red;
+        border-radius: 50px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 70px;
+    margin-bottom: 2rem;
+    padding-top: 2.8rem;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    color: $gray;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__btn {
+    width: 250px;
+    height: 60px;
+    background-color: $red;
+    color: $white;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 25px 35px rgba(#F53838, .35);
+  }
+}
