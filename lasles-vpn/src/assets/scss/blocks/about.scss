@@ -1,0 +1,81 @@
+.about {
+  padding-top: 10rem;
+
+  &__wrapper {
+    width: 100%;
+    min-height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0px 15px 50px 1px rgba(#0d1025, 0.06);
+
+    @include media($sm) {
+      padding: 2rem;
+    }
+
+    &-card {
+      position: relative;
+      width: 33.3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 2px;
+        height: 125px;
+        background-color: #eeeff2;
+        @include media($sm) {
+          width: 100%;
+          height: 2px;
+          top: 100%;
+          right: 50%;
+          transform: translatex(50%);
+        }
+      }
+      @include media($sm) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto 2rem;
+        &:last-child {
+          margin: 0 auto;
+        }
+      }
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+      background-color: #ffecec;
+      border-radius: 50%;
+      margin-right: 3.65rem;
+
+      @include media($lg) {
+        margin-right: 2rem;
+      }
+      @include media($sm) {
+        margin-right: 1.3rem;
+      }
+    }
+    &-title {
+      font-size: 2.5rem;
+      line-height: 30px;
+      font-weight: 700;
+      color: $dark-black;
+      margin-bottom: 0.5rem;
+    }
+    &-text {
+      font-size: 2rem;
+      color: $gray;
+      text-transform: capitalize;
+    }
+  }
+}

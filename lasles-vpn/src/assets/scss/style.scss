@@ -1,22 +1,27 @@
-@import "vars";
+@import 'vars';
+@import 'mixins';
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: $s16;
-    color: $black;
-    background-color: $white;
-    font-family: $base-font;
+  font-size: $s16;
+  color: $black;
+  background-color: $white;
+  font-family: $base-font;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-@import "blocks/header";
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/provide';

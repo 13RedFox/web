@@ -1,0 +1,108 @@
+.provide {
+  padding: 10rem 0;
+
+  @include media($md) {
+    padding: 7rem 0;
+  }
+  @include media($m) {
+    padding: 5rem 0;
+  }
+
+  &__img {
+    @include padding-hack(80.8%, cover);
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+      font-size: 3.7rem;
+      line-height: 50px;
+      font-weight: 500;
+      color: $dark-black;
+      text-transform: capitalize;
+      padding-top: 5.5rem;
+      margin-bottom: 2rem;
+
+      @include media($lg) {
+        font-size: 3.2rem;
+        line-height: 40px;
+        margin-bottom: 1rem;
+      }
+      @include media($md) {
+        padding-top: 0;
+      }
+      @include media($sm) {
+        font-size: 2.7rem;
+      }
+      @include media($m414) {
+        font-size: 2.1rem;
+        margin-bottom: 0.5rem;
+      }
+      @include media($m375) {
+        font-size: 1.9rem;
+        margin-bottom: 0.5rem;
+      }
+      @include media($m320) {
+        font-size: 1.6rem;
+        line-height: 25px;
+      }
+    }
+
+    &-text {
+      font-weight: 400;
+      line-height: 30px;
+      color: $gray;
+      padding-right: 3rem;
+      margin-bottom: 2rem;
+
+      @include media($lg) {
+        line-height: 25px;
+        margin-bottom: 1rem;
+      }
+      @include media($md) {
+        padding-right: 0;
+      }
+      @include media($sm) {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      @include media($m320) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @include media($sm) {
+        padding-left: 30%;
+      }
+      @include media($m375) {
+        padding-left: 5%;
+      }
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      font-size: $s14;
+      color: $gray;
+      margin-bottom: 2rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .icon {
+        margin-right: 1rem;
+      }
+
+      @include media($lg) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
