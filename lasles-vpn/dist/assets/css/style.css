@@ -252,7 +252,6 @@ a {
 
 .provide {
     padding: 10rem 0;
-    background-color: gray;
 }
 
 @media screen and (max-width: 991px) {
@@ -271,7 +270,6 @@ a {
     position: relative;
     padding-top: 80.8%;
     width: 100%;
-    background-color: #fff;
 }
 
 .provide__img > img {
@@ -294,7 +292,6 @@ a {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #fff;
 }
 
 .provide__wrapper-title {

@@ -1,0 +1,9 @@
+.network {
+  padding-top: 15rem;
+  &__header {
+    margin-bottom: 15.5rem;
+  }
+  &__wrapper {
+    @include padding-hack(50.8%, cover);
+  }
+}

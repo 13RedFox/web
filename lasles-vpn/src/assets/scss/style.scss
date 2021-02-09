@@ -22,6 +22,24 @@ a {
   text-decoration: none;
 }
 
+.main__title {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+  color: $dark-black;
+  margin-bottom: 1.7rem;
+}
+
+.main__text {
+  line-height: 30px;
+  text-align: center;
+  color: $gray;
+  padding: 0 4rem;
+}
+
 @import 'blocks/header';
 @import 'blocks/about';
 @import 'blocks/provide';
+@import 'blocks/plan';
+@import 'blocks/network';
