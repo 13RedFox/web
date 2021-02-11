@@ -1,1 +1,1 @@
-console.log('file 1');
+'use strict';

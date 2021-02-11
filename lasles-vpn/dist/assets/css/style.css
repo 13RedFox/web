@@ -26,6 +26,7 @@ a {
     text-align: center;
     color: #0b132a;
     margin-bottom: 1.7rem;
+    padding: 0 5rem;
 }
 
 .main__text {
@@ -459,7 +460,7 @@ a {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-    border: 2px solid #ddd;
+    border: 2px solid #dddddd;
     border-radius: 10px;
     transition: border-color 0.3s ease;
 }
@@ -569,4 +570,100 @@ a {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.sponsored {
+    padding-top: 3.5rem;
+}
+
+.sponsored__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.reviews {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.reviews__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.reviews__wrapper-card {
+    width: 30%;
+    min-height: 220px;
+    border: 2px solid #dddddd;
+    border-radius: 1rem;
+    transition: all .3s ease;
+    padding: 2rem 1rem;
+}
+
+.reviews__wrapper-card:hover {
+    border-color: #f53838;
+    box-shadow: 0 35px 15px rgba(11, 19, 42, 0.06);
+}
+
+.reviews__wrapper-card .card__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.reviews__wrapper-card .card__header-info {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 182px;
+}
+
+.reviews__wrapper-card .card__header-rating {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.reviews__wrapper-card .card__header-rating span {
+    color: #0b132a;
+    margin-right: 1rem;
+}
+
+.reviews__wrapper-card img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.reviews__wrapper-card .card__who {
+    text-transform: capitalize;
+}
+
+.reviews__wrapper-card .card__who h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #0b132a;
+    margin-bottom: 0.5rem;
+}
+
+.reviews__wrapper-card .card__who p {
+    font-size: 1.4rem;
+    color: #4f5665;
+    margin: 0;
+}
+
+.reviews__wrapper-card p {
+    color: #0b132a;
 }

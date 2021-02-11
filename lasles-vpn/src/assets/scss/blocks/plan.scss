@@ -1,8 +1,18 @@
 .plan {
   padding: 8rem 0;
   background-color: #f6f6f6;
+  @include media($lg) {
+    padding: 5rem 0;
+  }
   &__header {
     margin-bottom: 6rem;
+
+    @include media($lg) {
+      margin-bottom: 5rem;
+    }
+    @include media($md) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__card {
@@ -19,8 +29,35 @@
     &:hover {
       border-color: $red;
     }
+
+    @include media($lg) {
+      padding: 5rem 5rem 3rem;
+      min-height: 710px;
+    }
+    @include media($md) {
+      padding: 3rem 1.5rem 3rem;
+      min-height: 690px;
+    }
+    @include media($sm) {
+      padding: 3rem 1.5rem 3rem;
+      min-height: 670px;
+    }
+    @include media($m375) {
+      min-height: 650px;
+    }
+    @include media($m320) {
+      padding: 1.5rem 1.5rem 1.5rem;
+      min-height: 100vh;
+    }
     &-img {
       margin-bottom: 3rem;
+
+      @include media($lg) {
+        margin-bottom: 2.5rem;
+      }
+      @include media($m320) {
+        margin-bottom: 1.5rem;
+      }
     }
     &-text {
       font-size: $s18;
@@ -28,6 +65,13 @@
       text-transform: capitalize;
       color: $dark-black;
       margin-bottom: 3rem;
+
+      @include media($lg) {
+        margin-bottom: 2rem;
+      }
+      @include media($m320) {
+        margin-bottom: 1rem;
+      }
     }
     &-item {
       display: flex;
@@ -35,6 +79,9 @@
       margin-bottom: 1rem;
       &:last-child {
         margin-bottom: 0rem;
+      }
+      @include media($m320) {
+        margin-bottom: 0.5rem;
       }
       span {
         margin-right: 2.5rem;
@@ -55,6 +102,10 @@
       font-weight: 500;
       color: $dark-black;
       text-transform: capitalize;
+
+      @include media($m320) {
+        bottom: 75px;
+      }
       span {
         color: $gray;
         text-transform: lowercase;
@@ -80,6 +131,10 @@
         background-color: $red;
         color: $white;
         box-shadow: 0 15px 35px rgba($red, 0.35);
+      }
+
+      @include media($m320) {
+        bottom: 20px;
       }
     }
   }

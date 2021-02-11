@@ -30,6 +30,18 @@ a {
   color: $dark-black;
   margin-bottom: 1.7rem;
   padding: 0 5rem;
+
+  @include media($md) {
+    line-height: 40px;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+  }
+  @include media($m375) {
+    padding: 0;
+  }
+  @include media($m320) {
+    font-size: 3rem;
+  }
 }
 
 .main__text {
@@ -37,6 +49,11 @@ a {
   text-align: center;
   color: $gray;
   padding: 0 4rem;
+
+  @include media($md) {
+    line-height: 25px;
+    padding: 0;
+  }
 }
 
 // BLOCKS:
