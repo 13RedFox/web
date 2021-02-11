@@ -1,0 +1,62 @@
+.reviews {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    &-card {
+      width: 30%;
+      min-height: 220px;
+      border: 2px solid $silver;
+      border-radius: 1rem;
+      transition: all .3s ease;
+      padding: 2rem 1rem;
+      &:hover {
+        border-color: $red;
+        box-shadow: 0 35px 15px rgba($dark-black, 0.06);
+      }
+      .card__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+        &-info {
+          display: flex;
+          min-width: 182px;
+        }
+        &-rating {
+          display: flex;
+          align-items: center;
+          span {
+            color: $dark-black;
+            margin-right: 1rem;
+          }
+        }
+      }
+      img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin-right: 2rem;
+        border-radius: 50%;
+      }
+      .card__who {
+        text-transform: capitalize;
+        h3 {
+          font-size: $s18;
+          font-weight: 500;
+          color: $dark-black;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: $s14;
+          color: $gray;
+          margin: 0;
+        }
+      }
+      p {
+        color: $dark-black;
+      }
+    }
+  }
+}

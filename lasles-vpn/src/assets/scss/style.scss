@@ -29,6 +29,7 @@ a {
   text-align: center;
   color: $dark-black;
   margin-bottom: 1.7rem;
+  padding: 0 5rem;
 }
 
 .main__text {
@@ -38,8 +39,11 @@ a {
   padding: 0 4rem;
 }
 
+// BLOCKS:
 @import 'blocks/header';
 @import 'blocks/about';
 @import 'blocks/provide';
 @import 'blocks/plan';
 @import 'blocks/network';
+@import 'blocks/sponsored';
+@import 'blocks/reviews';

@@ -19,6 +19,22 @@ a {
     text-decoration: none;
 }
 
+.main__title {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    color: #0b132a;
+    margin-bottom: 1.7rem;
+}
+
+.main__text {
+    line-height: 30px;
+    text-align: center;
+    color: #4f5665;
+    padding: 0 4rem;
+}
+
 .header {
     padding-top: 4.5rem;
 }
@@ -421,4 +437,136 @@ a {
     .provide__wrapper-item {
         margin-bottom: 1.5rem;
     }
+}
+
+.plan {
+    padding: 8rem 0;
+    background-color: #f6f6f6;
+}
+
+.plan__header {
+    margin-bottom: 6rem;
+}
+
+.plan__card {
+    position: relative;
+    background-color: #fff;
+    padding: 8rem 7rem 3rem;
+    min-height: 760px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.plan__card:hover {
+    border-color: #f53838;
+}
+
+.plan__card-img {
+    margin-bottom: 3rem;
+}
+
+.plan__card-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #0b132a;
+    margin-bottom: 3rem;
+}
+
+.plan__card-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.plan__card-item:last-child {
+    margin-bottom: 0rem;
+}
+
+.plan__card-item span {
+    margin-right: 2.5rem;
+}
+
+.plan__card-item p {
+    font-size: 1.4rem;
+    color: #4f5665;
+    margin-bottom: 0;
+}
+
+.plan__card-price {
+    display: block;
+    position: absolute;
+    bottom: 115px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #0b132a;
+    text-transform: capitalize;
+}
+
+.plan__card-price span {
+    color: #4f5665;
+    text-transform: lowercase;
+    font-weight: 400;
+}
+
+.plan__card-btn {
+    width: 177px;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border: 2px solid #f53838;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #f53838;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 13px 0;
+    transition: all 0.3s ease;
+}
+
+.plan__card-btn:hover {
+    background-color: #f53838;
+    color: #fff;
+    box-shadow: 0 15px 35px rgba(245, 56, 56, 0.35);
+}
+
+.network {
+    padding-top: 15rem;
+}
+
+.network__header {
+    margin-bottom: 15.5rem;
+}
+
+.network__wrapper {
+    position: relative;
+    padding-top: 50.8%;
+    width: 100%;
+}
+
+.network__wrapper > img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
