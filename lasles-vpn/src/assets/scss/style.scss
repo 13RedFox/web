@@ -1,7 +1,4 @@
-@import 'bootstrap-grid.min.scss';
-@import 'bootstrap-reboot.min.scss';
-@import 'bootstrap.min.scss';
-
+// MAIN STYLE:
 @import 'vars';
 @import 'mixins';
 
@@ -60,6 +57,22 @@ a {
   }
 }
 
+.main__btn {
+  display: block;
+  width: 250px;
+  height: 60px;
+  background-color: $red;
+  color: $white;
+  font-weight: 700;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: 0 25px 35px rgba($red, 0.35);
+  }
+}
+
 // BLOCKS:
 @import 'blocks/header';
 @import 'blocks/about';
@@ -68,3 +81,4 @@ a {
 @import 'blocks/network';
 @import 'blocks/sponsored';
 @import 'blocks/reviews';
+@import 'blocks/subscribe';

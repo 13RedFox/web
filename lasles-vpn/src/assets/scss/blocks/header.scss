@@ -21,19 +21,6 @@
     }
   }
 
-  &__btn {
-    display: block;
-    width: 250px;
-    height: 60px;
-    background-color: $red;
-    color: $white;
-    font-weight: 700;
-    text-transform: capitalize;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 25px 35px rgba($red, 0.35);
-  }
-
   &__img {
     @include padding-hack(62.6%, cover);
   }
