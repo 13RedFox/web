@@ -1,3 +1,9 @@
+@import url(bootstrap-grid.min.css);
+
+@import url(bootstrap-reboot.min.css);
+
+@import url(bootstrap.min.css);
+
 html {
     font-size: 62.5%;
 }
