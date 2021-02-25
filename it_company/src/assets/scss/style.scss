@@ -1,0 +1,46 @@
+@import "vars";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: $white;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    font-size: $s16;
+    font-weight: 500;
+    color: $white;
+    background: $blue;
+    border: none;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+    margin: 0 auto;
+}
+
+//  Blocks:
+@import "blocks/header-menu";
+@import "blocks/header";

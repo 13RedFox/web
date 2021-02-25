@@ -1,0 +1,27 @@
+.header {
+  height: 100vh;
+  background: url("../images/first-screen.jpg") center / cover, no-repeat;
+
+  &__height {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: $s16;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    max-width: 830px;
+    font-size: $s48;
+    font-weight: bold;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+}

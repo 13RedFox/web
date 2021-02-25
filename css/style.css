@@ -5,14 +5,30 @@
 }
 
 body {
-  background-color: slategrey;
-  text-align: center;
+  background-color: #151320;
+  height: 100vh;
 }
 
+
 ul {
-  width: 200px;
+  width: 100%;
   list-style-type: none;
-  padding-top: 20px;
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+li {
+  width: 100%;
+  height: 200px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid greenyellow;
+  display: flex;
+  background: #8169BD32;
 }
 
 a {
