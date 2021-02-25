@@ -7,6 +7,7 @@
 body {
   background-color: #151320;
   height: 100vh;
+  overflow: hidden;
 }
 
 
@@ -16,19 +17,18 @@ ul {
   border: 2px solid red;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 li {
-  width: 100%;
+  width: 25%;
   height: 200px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 0 30px 20px 0;
   border: 1px solid greenyellow;
   display: flex;
   background: #8169BD32;
+  padding: 20px;
 }
 
 a {
